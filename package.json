@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-dev": "nodemon ./src/server.js"
+    "start-dev": "nodemon ./src/server.js",
+    "lint": "eslint ./src --fix"
+
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,9 @@
     "nanoid": "^3.1.22"
   },
   "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
     "nodemon": "^2.0.7"
   }
 }
