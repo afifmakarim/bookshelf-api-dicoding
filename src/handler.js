@@ -7,9 +7,7 @@ const getAllBooks = (request, h) => {
 
   if (name !== undefined) {
     const searchResult = bookShelf
-      .filter(
-        (word) => word.name.toLowerCase().indexOf(name.toLowerCase()) > -1
-      )
+      .filter((word) => word.name.toLowerCase().includes(name.toLowerCase()))
       .map((b) => ({
         id: b.id,
         name: b.name,
